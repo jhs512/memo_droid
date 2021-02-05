@@ -33,14 +33,13 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> Snackbar.make(view, "로그인 후 이용해주세요.", Snackbar.LENGTH_LONG)
                 .setAction("로그인", v -> {
-                        
+
                 }).show());
 
         // DRAWER세팅
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_homeMain)
+        mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_memberLogin, R.id.nav_homeMain)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

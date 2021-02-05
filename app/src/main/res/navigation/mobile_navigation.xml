@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_homeMain">
+    app:startDestination="@+id/nav_memberLogin">
+
+    <fragment
+        android:id="@+id/nav_memberLogin"
+        android:name="com.example.sbs.myapplication.ui.memberLogin.MemberLoginFragment"
+        android:label="로그인"
+        tools:layout="@layout/member_login_fragment" />
 
     <fragment
         android:id="@+id/nav_homeMain"
