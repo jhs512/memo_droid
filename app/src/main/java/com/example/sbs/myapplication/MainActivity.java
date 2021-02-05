@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> Snackbar.make(view, "로그인 후 이용해주세요.", Snackbar.LENGTH_LONG)
                 .setAction("로그인", v -> {
-
+                    NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+                    navController.navigate(R.id.nav_memberLogin);
                 }).show());
 
         // DRAWER세팅
