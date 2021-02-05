@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         // FAB세팅
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
+        fab.setOnClickListener(view -> Snackbar.make(view, "로그인 후 이용해주세요.", Snackbar.LENGTH_LONG)
+                .setAction("로그인", v -> {
+                        
+                }).show());
 
         // DRAWER세팅
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
